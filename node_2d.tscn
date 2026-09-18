@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bd85jdrkm6gvr"]
+
+[ext_resource type="Texture2D" uid="uid://cbj878bs88kg4" path="res://assets/bueno.png" id="1_wtcfe"]
+[ext_resource type="Script" uid="uid://b02i6gu8ut3mp" path="res://player.gd" id="2_0e48y"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bcwwu"]
+size = Vector2(16, 24)
+
+[node name="Node2D" type="CharacterBody2D" unique_id=436249702]
+script = ExtResource("2_0e48y")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1593830126]
+position = Vector2(-100, -9)
+shape = SubResource("RectangleShape2D_bcwwu")
+
+[node name="Bueno" type="Sprite2D" parent="." unique_id=1404926951]
+position = Vector2(-100, -9)
+texture = ExtResource("1_wtcfe")
